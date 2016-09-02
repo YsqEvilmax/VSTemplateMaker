@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VSTemplateMaker.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="vstemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./MyTemplate.vstemplate</Value>
+    </Setting>
+    <Setting Name="ico" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./__TemplateIcon.ico</Value>
+    </Setting>
+    <Setting Name="code" Type="System.String" Scope="User">
+      <Value Profile="(Default)">./AppModule/</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
