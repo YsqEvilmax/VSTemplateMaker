@@ -36,9 +36,9 @@
             // 
             // InstallBtn
             // 
-            this.InstallBtn.Location = new System.Drawing.Point(545, 94);
+            this.InstallBtn.Location = new System.Drawing.Point(81, 154);
             this.InstallBtn.Name = "InstallBtn";
-            this.InstallBtn.Size = new System.Drawing.Size(157, 52);
+            this.InstallBtn.Size = new System.Drawing.Size(157, 44);
             this.InstallBtn.TabIndex = 0;
             this.InstallBtn.Text = "Install";
             this.InstallBtn.UseVisualStyleBackColor = true;
@@ -50,17 +50,18 @@
             // 
             // PathTB
             // 
-            this.PathTB.Location = new System.Drawing.Point(59, 201);
+            this.PathTB.Location = new System.Drawing.Point(81, 254);
             this.PathTB.Name = "PathTB";
-            this.PathTB.Size = new System.Drawing.Size(454, 31);
+            this.PathTB.Size = new System.Drawing.Size(669, 31);
             this.PathTB.TabIndex = 1;
             this.PathTB.Text = "C:\\Users\\ysqev\\OneDrive\\文档\\Visual Studio 2015\\Templates\\ItemTemplates\\Visual C#\\";
             // 
             // BrowseBtn
             // 
-            this.BrowseBtn.Location = new System.Drawing.Point(545, 191);
+            this.BrowseBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BrowseBtn.Location = new System.Drawing.Point(584, 154);
             this.BrowseBtn.Name = "BrowseBtn";
-            this.BrowseBtn.Size = new System.Drawing.Size(157, 50);
+            this.BrowseBtn.Size = new System.Drawing.Size(157, 44);
             this.BrowseBtn.TabIndex = 2;
             this.BrowseBtn.Text = "Browse";
             this.BrowseBtn.UseVisualStyleBackColor = true;
@@ -71,8 +72,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 398);
-            this.Controls.Add(this.BrowseBtn);
             this.Controls.Add(this.PathTB);
+            this.Controls.Add(this.BrowseBtn);
             this.Controls.Add(this.InstallBtn);
             this.Name = "Form";
             this.Text = "Form1";
