@@ -1,0 +1,23 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>AppModule</DefaultName>
+    <Name>AngularJS Typescript Module</Name>
+    <Description>&lt;This is an AngularJS scaffolded module written in Typescript&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Web</ProjectSubType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.ico</Icon>
+    <TemplateGroupID>VC-Native</TemplateGroupID>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+			<ProjectItem SubType="Code" TargetFileName="\Controllers\$fileinputname$Ctrl.ts" ReplaceParameters="true">MyCtrl.ts</ProjectItem>
+			<ProjectItem SubType="Code" TargetFileName="IDirective.ts" ReplaceParameters="true">IDirective.ts</ProjectItem>
+			<ProjectItem SubType="Code" TargetFileName="MyDrtv.ts" ReplaceParameters="true">MyDrtv.ts</ProjectItem>
+			<ProjectItem SubType="Code" TargetFileName="IModel.ts" ReplaceParameters="true">IModel.ts</ProjectItem>
+			<ProjectItem SubType="Code" TargetFileName="\Models\$fileinputname$Model.ts" ReplaceParameters="true">MyModel.ts</ProjectItem>
+			<ProjectItem SubType="Code" TargetFileName="IService.ts" ReplaceParameters="true">IService.ts</ProjectItem>
+			<ProjectItem SubType="Code" TargetFileName="\Services\$fileinputname$DS.ts" ReplaceParameters="true">MyService.ts</ProjectItem>
+			<ProjectItem SubType="Code" TargetFileName="\Templates\$fileinputname$.html" ReplaceParameters="true">My.html</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

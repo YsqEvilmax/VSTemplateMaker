@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="$fileinputname$">
+<head>
+    <title>AngularJS With TypeScript</title>
+    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/css/bootstrap.custom.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">Click the following button to get your favorite tracks.</div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div ng-view="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../Scripts/angular.js"></script>
+    <script src="../../Scripts/angular-route.js"></script>
+    <script src="../../Scripts/angular-resource.js"></script>
+    <script src="Module.js"></script>
+    <script src="Config.js"></script>
+    <script src="Services/MyDS.js"></script>
+    <script src="Controllers/MyCtrl.js"></script>
+    <script src="Directives/MyDrtv.js"></script>
+</body>
+</html>

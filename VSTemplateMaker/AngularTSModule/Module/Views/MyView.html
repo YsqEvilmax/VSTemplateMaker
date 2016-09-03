@@ -1,0 +1,8 @@
+﻿<div class="jumbotron">
+    <ul class="list-group">
+        <li ng-show="MC.scope.data" class="list-group-item" ng-repeat="t in MC.scope.data">
+            {{t.title}}
+        </li>
+    </ul>
+    <button class="btn btn-block" ng-click="MC.getData()">Get Favorites Tracks</button>
+</div>

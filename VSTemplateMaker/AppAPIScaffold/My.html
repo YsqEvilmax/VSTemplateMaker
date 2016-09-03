@@ -1,0 +1,16 @@
+﻿<html ng-app="$fileinputname$">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <div ng-controller="MyCtrl as mc">
+        <div data-ng-repeat="element in mc.data">
+            <label>{{element}}</label>
+        </div>
+        <MyDrtv></MyDrtv>
+    </div>
+    <script src="../../../Scripts/angular.js"></script>
+    <script src="../Module.js"></script>
+</body>
+</html>

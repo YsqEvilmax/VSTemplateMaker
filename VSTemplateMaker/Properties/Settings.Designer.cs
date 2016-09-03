@@ -22,41 +22,5 @@ namespace VSTemplateMaker.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("./MyTemplate.vstemplate")]
-        public string vstemplate {
-            get {
-                return ((string)(this["vstemplate"]));
-            }
-            set {
-                this["vstemplate"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("./__TemplateIcon.ico")]
-        public string ico {
-            get {
-                return ((string)(this["ico"]));
-            }
-            set {
-                this["ico"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("./AppModule/")]
-        public string code {
-            get {
-                return ((string)(this["code"]));
-            }
-            set {
-                this["code"] = value;
-            }
-        }
     }
 }
