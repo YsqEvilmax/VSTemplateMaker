@@ -95,10 +95,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AngularTSModule\App\Index.html" />
-    <Content Include="AppAPIScaffold\My.html" />
-    <Content Include="AppAPIScaffold\MyTemplate.vstemplate" />
-    <Content Include="AppAPIScaffold\__TemplateIcon.ico" />
+    <Content Include="AngularTSApp\App\Index.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -870,17 +867,17 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="AngularTSModule\App\Views\MyView.html" />
-    <Content Include="AngularTSModule\MyTemplate.vstemplate">
+    <Content Include="AngularTSApp\App\Views\MyView.html" />
+    <Content Include="AngularTSApp\MyTemplate.vstemplate">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="AngularTSModule\__TemplateIcon.ico" />
+    <Content Include="AngularTSApp\__TemplateIcon.ico" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <TypeScriptCompile Include="AppAPIScaffold\MyCtrl.ts" />
-    <TypeScriptCompile Include="AppAPIScaffold\MyModel.ts" />
-    <TypeScriptCompile Include="AngularTSModule\App\Services\MyDS.ts" />
+    <TypeScriptCompile Include="AngularTSApp\App\Controllers\DataController.ts" />
+    <TypeScriptCompile Include="AngularTSApp\App\Services\DataService.ts" />
+    <TypeScriptCompile Include="AngularTSApp\App\Services\MyDS.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -890,18 +887,25 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="AngularTSModule\App\Controllers\MyCtrl.ts" />
-    <TypeScriptCompile Include="AngularTSModule\App\Directives\MyDrtv.ts" />
-    <TypeScriptCompile Include="AngularTSModule\App\Models\MyModel.d.ts" />
-    <TypeScriptCompile Include="AngularTSModule\App\Module.ts" />
+    <TypeScriptCompile Include="AngularTSApp\App\Controllers\MyCtrl.ts" />
+    <TypeScriptCompile Include="AngularTSApp\App\Directives\MyDrtv.ts" />
+    <TypeScriptCompile Include="AngularTSApp\App\Models\MyModel.d.ts" />
+    <TypeScriptCompile Include="AngularTSApp\App\Module.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>REM Try to delete the file only if it exists
-IF EXIST "$(TargetDir)AngularTSModule.zip" del /F "$(TargetDir)AngularTSModule.zip"
+IF EXIST "AngularTSApp.zip" del /F "$(TargetDir)AngularTSApp.zip"
 
 REM Create the Zip file
-powershell.exe -nologo -noprofile -command "&amp; { Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::CreateFromDirectory('$(ProjectDir)AngularTSModule', 'AngularTSModule.zip'); }"
+powershell.exe -nologo -noprofile -command "&amp; { Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::CreateFromDirectory('$(ProjectDir)AngularTSApp', 'AngularTSApp.zip'); }"
+
+REM Copy and replace template in the target folder
+XCOPY /y "AngularTSApp.zip"  "C:\Users\ysqev\OneDrive\文档\Visual Studio 2015\Templates\ItemTemplates\Visual C#\Angular\"
+
+
+
+
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,6 @@
 ﻿/// <reference path="../../../scripts/typings/angularjs/angular.d.ts" />
 
-declare module $fileinputname$App.Models {
+declare module Angular.App.Models {
     interface MyModel {
         id:number,
         title: string;

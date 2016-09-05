@@ -1,4 +1,4 @@
-﻿module $fileinputname$App.Directives {
+﻿module Angular.App.Directives {
 
     export class MyDrtv {
 
@@ -10,5 +10,5 @@
         }
     }
 
-    $fileinputname$App.$fileinputname$._module.directive(MyDrtv);
+    Angular.App.$fileinputname$._module.directive(MyDrtv);
 }

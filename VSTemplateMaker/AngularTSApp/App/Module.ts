@@ -2,7 +2,7 @@
 /// <reference path="../../scripts/typings/angularjs/angular-route.d.ts" />
 /// <reference path="../../scripts/typings/angularjs/angular-resource.d.ts" />
 
-module $fileinputname$App {
+module Angular.App {
     export class $fileinputname$ {
         public static Dir(): string {
             let path = window.location.pathname;
@@ -15,7 +15,7 @@ module $fileinputname$App {
             .config(($routeProvider: ng.route.IRouteProvider) => {
                 $routeProvider.when("/My", {
                     templateUrl: $fileinputname$.Dir() + "Views/MyView.html",
-                    controller: "AppModuleApp.Controllers.MyCtrl",
+                    controller: "Angular.App.Controllers.MyCtrl",
                     controllerAs: "MC"
                 }).otherwise({
                     redirectTo: "/My"

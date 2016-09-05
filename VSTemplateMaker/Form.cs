@@ -35,8 +35,8 @@ namespace VSTemplateMaker
                     System.IO.Directory.CreateDirectory(folderPath);
                 }
 
-                string filePath = System.IO.Path.Combine(folderPath, "AngularTSModule.zip");
-                System.IO.File.Copy("AngularTSModule.zip", filePath, true);
+                string filePath = System.IO.Path.Combine(folderPath, "AngularTSApp.zip");
+                System.IO.File.Copy("AngularTSApp.zip", filePath, true);
 
                 MessageBox.Show("Successfully Installed!");
             }
