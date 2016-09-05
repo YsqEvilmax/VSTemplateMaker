@@ -8,12 +8,12 @@ module TestApp {
         //    $routeProvider.otherwise({ redirectTo: "/home" });
         //}
         constructor($routeProvider: ng.route.IRouteProvider) {
-            $routeProvider.when("/home", { controller: "TestApp.controllers.TSDemoController", templateUrl: "/app/views/playlist.html", controllerAs: "playList" });
-            $routeProvider.otherwise({ redirectTo: "/home" });
+            $routeProvider.when("/homee", { controller: "TestApp.controllers.TSDemoController", templateUrl: "/app/views/playlist.html", controllerAs: "playList" });
+            $routeProvider.otherwise({ redirectTo: "/homee" });
         }
     }
 
 
     Routes.$inject = ["$routeProvider"];
-    //TestApp.AngularWithTS._module.config(TestApp.Routes.configureRoutes);
+    //TestApp.AngularWithTS._module.config(TestApp.Routes);
 }

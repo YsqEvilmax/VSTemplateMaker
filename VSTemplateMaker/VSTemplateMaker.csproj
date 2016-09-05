@@ -95,7 +95,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AngularTSModule\Module\Index.html" />
+    <Content Include="AngularTSModule\App\Index.html" />
     <Content Include="AppAPIScaffold\My.html" />
     <Content Include="AppAPIScaffold\MyTemplate.vstemplate" />
     <Content Include="AppAPIScaffold\__TemplateIcon.ico" />
@@ -870,7 +870,7 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="AngularTSModule\Module\Views\MyView.html" />
+    <Content Include="AngularTSModule\App\Views\MyView.html" />
     <Content Include="AngularTSModule\MyTemplate.vstemplate">
       <SubType>Designer</SubType>
     </Content>
@@ -880,7 +880,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="AppAPIScaffold\MyCtrl.ts" />
     <TypeScriptCompile Include="AppAPIScaffold\MyModel.ts" />
-    <TypeScriptCompile Include="AngularTSModule\Module\Services\MyDS.ts" />
+    <TypeScriptCompile Include="AngularTSModule\App\Services\MyDS.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -890,11 +890,10 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="AngularTSModule\Module\Config.ts" />
-    <TypeScriptCompile Include="AngularTSModule\Module\Controllers\MyCtrl.ts" />
-    <TypeScriptCompile Include="AngularTSModule\Module\Directives\MyDrtv.ts" />
-    <TypeScriptCompile Include="AngularTSModule\Module\Models\MyModel.d.ts" />
-    <TypeScriptCompile Include="AngularTSModule\Module\Module.ts" />
+    <TypeScriptCompile Include="AngularTSModule\App\Controllers\MyCtrl.ts" />
+    <TypeScriptCompile Include="AngularTSModule\App\Directives\MyDrtv.ts" />
+    <TypeScriptCompile Include="AngularTSModule\App\Models\MyModel.d.ts" />
+    <TypeScriptCompile Include="AngularTSModule\App\Module.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

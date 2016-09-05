@@ -9,8 +9,8 @@ var TestApp;
         //    $routeProvider.otherwise({ redirectTo: "/home" });
         //}
         function Routes($routeProvider) {
-            $routeProvider.when("/home", { controller: "TestApp.controllers.TSDemoController", templateUrl: "/app/views/playlist.html", controllerAs: "playList" });
-            $routeProvider.otherwise({ redirectTo: "/home" });
+            $routeProvider.when("/homee", { controller: "TestApp.controllers.TSDemoController", templateUrl: "/app/views/playlist.html", controllerAs: "playList" });
+            $routeProvider.otherwise({ redirectTo: "/homee" });
         }
         return Routes;
     }());

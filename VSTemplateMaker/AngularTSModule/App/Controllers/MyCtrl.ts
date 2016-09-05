@@ -12,7 +12,6 @@ module $fileinputname$App.Controllers {
         constructor(private $scope: ng.IScope,
             private service: Services.DataService<Models.MyModel>) {
             this.scope = $scope;
-            this.scope.data = service.Resource.query();
         }
 
         getData() {

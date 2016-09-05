@@ -11,8 +11,7 @@
   </TemplateData>
   <TemplateContent>
     <References />
-	<Folder Name="Module">
-		<ProjectItem SubType="Code" TargetFileName="Config.ts" ReplaceParameters="true">Config.ts</ProjectItem>
+	<Folder Name="App">
 		<ProjectItem SubType="Code" TargetFileName="Module.ts" ReplaceParameters="true">Module.ts</ProjectItem>
     <ProjectItem SubType="Code" TargetFileName="index.html" ReplaceParameters="true">index.html</ProjectItem>
 		<Folder Name="Controllers">
